@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-search-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2E8B57; /* Dark green */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #2E8B57; /* Dark green */
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.account-cart a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Banner section */
+.banner {
+    background-image: url('image/hero_image.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay to improve text visibility */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    max-width: 600px; /* Optional: limit the width of the text content */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    margin-left: 20px; /* Add space from the left */
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    color: #fff; /* Ensure text is readable on background image */
+    margin: 0 0 20px 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    color: #fff; /* Ensure text is readable on background image */
+    margin: 0 0 20px 0;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 10px;
+    height: 45px;
+    width: 50px;
+    margin-left: 20px; /* Add space from the left */
+}
+
+.banner-buttons button {
+    border-radius: 25px; /* Adjust the value as needed to achieve the desired roundness */
+    padding: 0 20px;
+    background-color: #2E8B57; /* Dark green */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.banner-buttons button:hover {
+    background-color: #246B43; /* Darker green */
+}
+
+/* hero sectio cdoe */
+.center {
+    text-align: center;
+}
+
+.hero-section .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items to the left and right edges */
+}
+
+.hero-section .category {
+    width: 200px; /* Set a fixed width for each category box */
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between categories */
+    border: 2px solid #ddd; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Add a background color */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.hero-section .category:hover {
+    transform: translateY(-5px); /* Move the category box up slightly on hover */
+}
+
+.hero-section .category img {
+    width: 100%; /* Ensure images fill the entire width of the box */
+    max-height: 150px; /* Set a maximum height for all images */
+    object-fit: cover; /* Ensure the entire image is visible */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Add rounded corners to the images */
+}
+
+.hero-section .category p {
+    font-weight: bold; /* Bold typography */
+}
+
+
+/**/
+
+.deals-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #2E8B57; /* Dark green */
+}
+
+.rating {
+    color: #FFD700; /* Gold */
+}
+
+.add-to-cart {
+    background-color: #2E8B57; /* Dark green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #246B43; /* Darker green */
+}
+
+/* footer section code */
+
+.brand-footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .brand-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .brand-grid a:hover img {
+    opacity: 0.7;
+  }
+  
+
+
+
